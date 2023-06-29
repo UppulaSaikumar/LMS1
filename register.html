@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="styles.css">
+<title> CSS Login Screen Tutorial </title>
+<script type="text/javascript">
+  function validate()
+  {
+    var usname = document.getElementById ("uname").value;
+    var passw = document.getElementById ("pass").value;
+    var female= document.getElementById("g").value;
+    var male=document.getElementById("m").value;
+    if(usname== "" || passw == "")
+    {
+       alert("No Blank values allowed");
+       return false;
+        
+    }
+    else{
+      true;
+    }
+  }
+  </script>
+</head>
+<body>
+  <body>
+    <nav class="navbar">
+        <div class="nav-right">
+
+            <li><a href="login.html">Login</a></li>
+            
+        </div>
+    </nav>
+    <div class="login-page">
+      <div class="form">
+        <div class="login">
+          <div class="login-header">
+            <h3>REGISTER</h3>
+            <p>Please enter your credentials to login.</p>
+          </div>
+        </div>
+        <form onsubmit="return Validate()" action="index.html">
+          <input id="uname" type="text" placeholder="username"/>
+          <input id="pass" type="password" placeholder="password"/>
+           Female <input id="g" type="radio" name="female" value="female"/>
+            Male<input id="m" type="radio"  name="male" value="male"/> 
+          <button type="submit"> Register</button>
+          <p class="message">Not registered? <a href="login.html">Login</a></p>
+        </form>
+      </div>
+    </div>
+</body>
+</body>
+</html>
